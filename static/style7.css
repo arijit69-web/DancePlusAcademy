@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  transition: 0.25s;
+  font-family: sans-serif;
+}
+body {
+  background: center / cover no-repeat url("/static/bg.jpg");
+
+  font-family: system-ui, sans-serif;
+  padding: 0 2rem;
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid silver;
+  border-image: linear-gradient(
+      to right,
+      transparent 20%,
+      darkslategrey,
+      transparent 80%
+    )
+    30;
+}
+/*** Specific styles ***/
+details {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: lavender;
+  border-radius: 1rem;
+}
+summary {
+  list-style-type: "❔ ";
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: slategrey;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+}
+summary::after {
+  content: "➕";
+  background: whitesmoke;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0.25rem;
+  top: -0.5rem;
+  color: whitesmoke;
+}
+details[open] {
+  background: whitesmoke;
+}
+details[open] summary {
+  color: dimgrey;
+}
+details[open] summary::after {
+  content: "➖";
+}
+p {
+  color: dimgrey;
+  font-weight: bold;
+  letter-spacing: 1.5;
+}
+footer {
+  margin-left: 333px;
+  color: aliceblue;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 12%;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition-duration: 0.4s;
+  margin-bottom: 20px;
+  margin-left: 1010px;
+  padding: 8px;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #4d4847;
+}

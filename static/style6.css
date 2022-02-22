@@ -1,0 +1,45 @@
+* {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+}
+form {
+  text-align: center;
+}
+.button {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  background-color: black;
+  color: white;
+  padding: 6px 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.4s;
+  width: 12%;
+  top: 30px;
+  left: 500px;
+}
+.button:hover {
+  background-color: #4d4847;
+}
+
+#footer {
+  padding: 15px;
+  color: white;
+  text-align: center;
+
+  height: 50px;
+  background-color: black;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}

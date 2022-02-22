@@ -1,0 +1,98 @@
+doctype html
+html
+  head
+    title Dance + Academy
+    link(rel='icon' href='../static/bg.jpg') 
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
+
+
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/about") About Us]
+            li #[a(href="/info") Class Information]
+            li #[a(href="/price") Pricing]
+            li #[a(href="/shop") Swags]
+            li #[a(href="/review") Rate Us]
+            li #[a(href="/bot") Chat Bot]
+        a(class='button' href='/register') REGISTER NOW!
+
+    section#introSection
+            div DANCE + ACADEMY
+            div.small 
+                | Dance To Your Own Rhythm
+    br
+    br
+    section#step
+    
+    section#coreo
+    
+    #carouselExampleControls.carousel.slide(data-ride='carousel')
+      .carousel-inner
+        .carousel-item.active
+           img.d-block.w-100(src='../static/Q1.PNG' alt='First slide')
+        .carousel-item
+           img.d-block.w-100(src='../static/Q2.PNG' alt='Second slide')
+        .carousel-item
+           img.d-block.w-100(src='../static/Q3.PNG' alt='Third slide')
+        .carousel-item
+           img.d-block.w-100(src='../static/Q4.PNG' alt='Third slide')
+      a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+      section#sponserSection
+         h2 
+            | Our Sponsors & Partners
+      doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  style.
+    .count {
+    border-radius: 10px;
+    border:5px solid white;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-family:sans-serif;
+    color:white;
+    background: center / cover no-repeat url("/static/graph.png");
+    }
+.count
+
+  h1 
+  
+    |Visitors Stats
+    #CounterVisitor
+script.
+  var n = localStorage.getItem("on_load_counter");
+  if (n === null) {
+  n = 0;
+  }
+  n++;
+  localStorage.setItem("on_load_counter", n);
+  nums = n.toString().split("").map(Number);
+  document.getElementById("CounterVisitor").innerHTML = "";
+  for (var i of nums) {
+  document.getElementById("CounterVisitor").innerHTML +=
+  '<span class="counter-item">' + i + "</span>";
+  }
+
+
+
+footer#footer
+   h5 Copyright &copy;&nbsp;2021 Dance+ Academy | #[a(href="/FAQ") FAQ] | Terms of Use | Privacy Policy | Refund Policy
+    
+
+    

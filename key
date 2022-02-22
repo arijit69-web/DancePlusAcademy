@@ -1,0 +1,17 @@
+-----------------Fast-2sms------------------------
+API_KEY=J6XuHBvtdNx0lCq1h9IbpwkAUTjZ7r4fGegQEFYomRnKLW3Vc5NEnsDmKhjxU7vGIWtMTXSlf0up5Ro3
+
+-----------------MongoDB--------------------------
+const DB =
+  "mongodb+srv://arijit:Arijit@2000@cluster0.m4uuy.mongodb.net/DancePlus?retryWrites=true&w=majority";
+
+----------------------Stripe-JS-APP.js Page--------------------------------
+var Publishable_Key =
+  "pk_test_51IKbd3Jwkx2vX4NUc2gUq8hcMVYRfVjga8yjdfoDSPz3kZIGXdKnRUrzNrny88nskfWspc6N5htOPh4VBGgVNcgV00dExlonw6";
+
+var Secret_Key =
+  "sk_test_51IKbd3Jwkx2vX4NUa6rvmEqfwGpRH3J9bYmv8YoUQwxFbMZ2UUDdqkd0F66Uh51DaAvdfzIDwdXdawB1Mmm5QMeK00kA0HDCmD";
+
+-------------------------Pay.pug-Stripe.js----------------------------------
+
+script.stripe-button(src='//checkout.stripe.com/v2/checkout.js' data-key='pk_test_51IKbd3Jwkx2vX4NUc2gUq8hcMVYRfVjga8yjdfoDSPz3kZIGXdKnRUrzNrny88nskfWspc6N5htOPh4VBGgVNcgV00dExlonw6' data-amount='100000' data-currency='inr' data-name='Dance+ Academy' data-description='Dance+ Academy Fees' data-locale='auto')

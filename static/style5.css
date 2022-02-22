@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: sans-serif;
+  /* font-family: "Langar", cursive; */
+}
+#introSection div.small {
+  font-size: 30px;
+  color: white;
+}
+#navbar {
+  background-color: black;
+  padding: 13px 14px;
+}
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#navbar li {
+  list-style: none;
+}
+#navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 7px 20px;
+  font-size: 1.2rem;
+}
+#navbar li a:hover {
+  color: grey;
+  text-decoration: none;
+  padding: 7px 20px;
+  font-size: 1.2rem;
+}
+#introSection {
+  color: white;
+  text-align: center;
+  background: center / cover no-repeat url("/static/bg.jpg");
+  height: 650px;
+  flex-direction: column;
+  background-color: white;
+  font-size: 70px;
+}
+img {
+  background: center / cover no-repeat url("/static/price.PNG");
+  height: 320px;
+  width: 100%;
+  background-color: white;
+}
+#paySection h2 {
+  text-align: center;
+  font-size: 40px;
+  background-color: black;
+}
+
+#footer {
+  padding: 15px;
+  color: white;
+  text-align: center;
+
+  height: 50px;
+  background-color: black;
+}
+.button {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  background-color: black;
+  color: white;
+  padding: 4px 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.4s;
+  width: 15%;
+  top: 2px;
+  left: 1000px;
+  padding: 6.5px 9px;
+}
+.button2 {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  background-color: black;
+  color: white;
+  padding: 4px 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.4s;
+  width: 20%;
+  top: 2px;
+  left: 20px;
+  padding: 6.5px 9px;
+}
+.button:hover {
+  background-color: #4d4847;
+  color: white;
+}
+.button2:hover {
+  background-color: #4d4847;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: white;
+}

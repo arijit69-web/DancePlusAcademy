@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title Rate Us
+    link(rel='icon' href='../static/bg.jpg') 
+    script(src="https://kit.fontawesome.com/a076d05399.js")
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    script(type='text/javascript').
+        (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();
+
+
+    
+    
+    style
+      include ../static/style.css
+      include ../static/style4.css
+  body
+    nav#navbar
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/about") About Us]
+            li #[a(href="/info") Class Information]
+            li #[a(href="/price") Pricing]
+            li #[a(href="/shop") Swags]
+            li #[a(href="/review") Rate Us]
+            li #[a(href="/bot") Chat Bot]
+            
+        a(class='button' href='/register') REGISTER NOW!
+
+    section#introSection
+            div DANCE + ACADEMY
+            div.small 
+                | Rate Our Dance Academy
+    
+	
+    div(class="container0")
+        div(class="post")
+            
+        div(class="star-widget")
+            input#rate-5(type="radio" name="rate")
+            label(for="rate-5" class="fas fa-star")
+            input#rate-4(type="radio" name="rate")
+            label(for="rate-4" class="fas fa-star")
+            input#rate-3(type="radio" name="rate")
+            label(for="rate-3" class="fas fa-star")
+            input#rate-2(type="radio" name="rate")
+            label(for="rate-2" class="fas fa-star")
+            input#rate-1(type="radio" name="rate")
+            label(for="rate-1" class="fas fa-star")
+            form(action="#" method ="post" )
+                header
+	
+    
+    footer#footer
+        h5 Copyright  &copy;&nbsp;2021&nbsp;Dance+ Academy | #[a(href="/FAQ") FAQ] | Terms of Use | Privacy Policy | Refund Policy
+
+

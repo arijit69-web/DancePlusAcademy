@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    style
+      include ../static/style6.css
+    title Payment
+    link(rel='icon' href='../static/bg.jpg')
+  body
+    h1 Register First and Pay Registration Fee of Rs.1000 to Dance+ Academy
+    a(class='button' href='/register') REGISTER NOW!
+    form(action='payment' method='POST')
+      script.stripe-button(src='//checkout.stripe.com/v2/checkout.js' data-key='pk_test_51IKbd3Jwkx2vX4NUc2gUq8hcMVYRfVjga8yjdfoDSPz3kZIGXdKnRUrzNrny88nskfWspc6N5htOPh4VBGgVNcgV00dExlonw6' data-amount='100000' data-currency='inr' data-name='Dance+ Academy' data-description='Dance+ Academy Fees' data-locale='auto')
+    footer#footer
+        h5 Copyright &copy; 2021 Dance+ Academy | #[a(href="/FAQ") FAQ] | Terms of Use | Privacy Policy | Refund Policy

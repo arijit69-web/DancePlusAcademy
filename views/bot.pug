@@ -1,0 +1,28 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  link(rel='icon' href='../static/bg.jpg') 
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Chat With Our Bot - Jarvis
+  link(rel='stylesheet' href='../static/style9.css')
+header 
+    h3 Chat With Our Bot - Jarvis
+    a(class='button' href='/') Home Page
+
+section.main
+  .user-area
+    img(src='/static/user.gif')
+  .chatarea-main
+    .chatarea-outer
+      //
+        <div class="chatarea-inner user">Hello hi, how area you, i am good. What about you!</div>
+        <div class="chatarea-inner chatbot">Hello hi, how area you, i am good. What about you!</div>
+        <div class="chatarea-inner user">Hello hi, how area you, i am good. What about you!</div>
+  .chatbot-area
+    img(src='/static/chatbot.gif')
+    
+  button#mic 
+     i.fa.fa-microphone(style='font-size:40px;color:black')
+script
+      include main.js

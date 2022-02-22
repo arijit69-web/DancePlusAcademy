@@ -1,0 +1,117 @@
+doctype html
+html
+  head
+    title Class Information
+    link(rel='icon' href='../static/bg.jpg') 
+    style
+     
+      include ../static/style2.css
+  body
+    nav#navbar
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/about") About Us]
+            li #[a(href="/info") Class Information]
+            li #[a(href="/price") Pricing]
+            li #[a(href="/shop") Swags]
+            li #[a(href="/review") Rate Us]
+            li #[a(href="/bot") Chat Bot]
+        a(class='button' href='/register') REGISTER NOW!
+
+    section#introSection
+            div DANCE + ACADEMY
+            div.small 
+                | Class Information
+    h2(style='text-align:center')
+        | Venue: 8/1 New Santoshpur 1st Lane, near Santoshpur Lake, Kolkata-700075 
+    h2(style='text-align:center')
+        | Days: Monday to Friday &nbsp; &nbsp;&nbsp;Timing: 10 A.M. - 10 P.M. 
+h1(style='text-align:center')
+  | DANCE STYLES 
+.row
+  .column
+    .card
+      img.center(src='/static/HH.gif' alt='Paris')
+      .container69
+        h1 &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  HIPHOP DANCE
+        p
+          | Hip-hop dance refers to street dance styles primarily performed to hip-hop music or that have evolved as part of hip-hop culture. It includes a wide range of styles primarily breaking which was created in the 1970s and made popular by dance crews in the United States.
+
+
+        
+          
+  .column
+    .card
+      img.center(src='/static/JF.gif' alt='Paris')
+      .container69
+        h1 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; JAZZ FUNK
+        
+        p
+          | Jazz Funk, also called Street Jazz, borrows a lot of movement from other dance styles. From ballet-modern-hip hop- to lyrical, jazz funk incorporates little bits and pieces of other dance genres and wraps into a funky style that is both fun and expressive! ... Jazz Funk is a dance style of the body and mind.
+        
+          
+  .column
+    .card
+      img.center(src='/static/BD.gif' alt='Paris')
+      .container69
+        h1 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  BREAKING DANCE
+        
+        p
+          | Breaking, also called breakdancing or b-boying/b-girling, is an athletic style of street dance from the United States. While diverse in the amount of variation available in the dance, breakdancing mainly consists of four kinds of movement: toprock, downrock, power moves and freezes.
+          
+  .column
+    .card
+      img.center(src='/static/ballet.gif' alt='Paris')
+      .container69
+        h1 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; BALLET
+        
+        p
+          | Ballet is a type of performance dance that originated during the Italian Renaissance in the fifteenth century and later developed into a concert dance form in France and Russia. It has since become a widespread, highly technical form of dance with its own vocabulary based on French terminology. 
+          
+  .column
+    .card
+      img.center(src='/static/KP.gif' alt='Paris')
+      .container69
+        h1 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  K-POP DANCE
+        
+        p
+          | Dance is an integral part of K-pop. ... The K-pop choreography (Korean: 안무, romanized: Anmu) often includes the so-called "point dance" (Korean: 포인트 안무), referring to a dance made up of hooking and repetitive movements within the choreography that matches the characteristics of the lyrics of the song.
+
+  .column
+    .card
+      img.center(src='/static/wk.gif' alt='Paris')
+      .container69
+        h1 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   WHACKING
+        
+        p
+          | Whacking is a form of street dance created in the LGBT clubs of Los Angeles during the 1970s disco era. The style is typically done to 70s disco music and is mainly distinguishable by its rotational arm movements, posing and emphasis on expressiveness.           
+    
+    
+    
+        <audio autoplay loop>
+            <source src="/static/ting.mp3" type="audio/mpeg">
+        </audio>
+style(type='text/css').
+  #map {
+  height: 400px;
+  width: 100%;
+  }
+script.
+  function initMap() {
+  const uluru = { lat: 22.495, lng: 88.385 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+  zoom: 16,
+  center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+  position: uluru,
+  map: map,
+  });
+  }
+h1(style='text-align:center') 
+  | LOCATION
+#map
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDD4vlY9TQLmeuZYXTj0JEHUyKFPLeldpw&callback=initMap&libraries=&v=weekly' async='')
+
+h5(style='text-align:center') Copyright &copy; 2021 &nbsp;Dance+ Academy | #[a(href="/FAQ") FAQ] | Terms of Use | Privacy Policy | Refund Policy
