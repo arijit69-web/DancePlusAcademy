@@ -1,4 +1,4 @@
-# Dance-Plus-Academy
+# Dance Plus Academy Website
 
 ## Aim:
 
